@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Manicure</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Cadastro para Manicure</h1>
+        
+        <!-- Formulário de cadastro -->
+        <form id="form-cadastro">
+            <label for="nome">Nome do Cliente:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="servico">Serviço:</label>
+            <select id="servico" name="servico" required>
+                <option value="manicure">Manicure</option>
+                <option value="pedicure">Pedicure</option>
+                <option value="alongamento">Alongamento de Unhas</option>
+            </select>
+
+            <label for="data">Data do Agendamento:</label>
+            <input type="date" id="data" name="data" required>
+
+            <button type="submit">Salvar Cadastro</button>
+        </form>
+
+        <div id="cadastros-lista">
+            <h2>Lista de Cadastros</h2>
+            <ul id="lista-cadastros"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
